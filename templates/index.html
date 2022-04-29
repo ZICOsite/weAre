@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are</title>
+    <link rel="shortcut icon" href="{% static "img/logo.svg"%}" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href={% static "styles/main.min.css" %}>
+</head>
+
+<body>
+    <header class="header" id="header">
+    <nav class="header__nav">
+        <div class="container header__nav-container">
+            <a href="#!" class="header__nav-logo"><img src={% static "img/logo.svg"%} alt=""></a>
+            <a href="#contact" class="header__nav-btn btn">Напишите нам</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header__content">
+            <div class="header__content-desc">
+                <h1 class="header__title">
+                    Вовлекаем в процессы
+                    правильных людей вместе с <span class="header__title-span">WeAre</span>
+                </h1>
+                <a href="#contact" class="header__btn btn">Связатся</a>
+            </div>
+            <img src={% static "img/header/OnlineReviewAmico.svg"%} alt="" class="header__image">
+        </div>
+    </div>
+</header>
+    <main>
+        <section class="platform" id="platform">
+            <div class="platform__container">
+                <div class="platform__carousel">
+                    <div class="swiper platform__slider" id="platform__carousel">
+                        <div class="swiper-wrapper platform__wrapper">
+                            <div class="swiper-slide platform__slides">
+                                <div class="platform__slide">
+                                    <img src={% static "img/platform/SocialStrategy-pana.svg"%} alt="" class="platform__slide-img">
+                                    <div class="platform__slide-desc">
+                                        <h3 class="platform__slide-title title">Платформа для обучения сотрудников</h3>
+                                        <p class="platform__slide-txt">Поможем вам вовлечь сотрудников в каждый процесс внутри компании и увеличить эффективность на рабочих местах</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide platform__slides">
+                                <div class="platform__slide">
+                                    <img src={% static "img/platform/QRCode-pana.svg"%} alt="" class="platform__slide-img">
+                                    <div class="platform__slide-desc">
+                                        <h3 class="platform__slide-title title">Система мотивации и мониторинга для сотрудников</h3>
+                                        <p class="platform__slide-txt">Люди смогут оставлять отзывы и чаевые отсканировав QR-code сотрудника</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide platform__slides">
+                                <div class="platform__slide">
+                                    <img src={% static  "img/platform/AtTheOffice-pana.svg"%} alt="" class="platform__slide-img">
+                                    <div class="platform__slide-desc">
+                                        <h3 class="platform__slide-title title">Безопасный найм сотрудников</h3>
+                                        <p class="platform__slide-txt">Предотвращаем потери кадровой безопастности, на первом месте правовое обеспечение деятельности службы управления персоналом</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide platform__slides">
+                                <div class="platform__slide">
+                                    <img src={% static "img/platform/StartupLife-pana.svg"%} alt="" class="platform__slide-img">
+                                    <div class="platform__slide-desc">
+                                        <h3 class="platform__slide-title title">Моментальный онбординг</h3>
+                                        <p class="platform__slide-txt">Наша цель показать пользователю ценность 
+                                            продукта и как можно скорее помочь ему достичь “первого успеха”. Это в свою очередь  увеличит выручку компании и другие желаемые бизнес показатели </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev platform__prev"></div>
+                    <div class="swiper-button-next platform__next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits" id="benefits">
+            <div class="container benefits__container">
+                <div class="benefits__top">
+                    <h2 class="benefits__title title">Польза нашей платформы</h2>
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <a href="#!" class="benefits__link"><img src={% static "img/benefits/scan.svg"%} alt="">Сканер</a>
+                        </li>
+                        <li class="benefits__item">
+                            <a href="#!" class="benefits__link"><img src={% static "img/benefits/messages-2.svg"%} alt="">Мои отзывы</a>
+                        </li>
+                        <li class="benefits__item">
+                            <a href="#!" class="benefits__link"><img src={% static "img/benefits/usd-coin-(usdc).svg"%} alt="">Чаевые</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="benefits__cards">
+                    <div class="benefits__card">
+                        <img src={% static "img/benefits/1.webp"%} alt="" class="benefits__card-img">
+                        <p class="benefits__card-txt">Прозрачная и достоверная информация о компании</p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src={% static "img/benefits/2.webp"%} alt="" class="benefits__card-img">
+                        <p class="benefits__card-txt">Прозрачная и достоверная информация о сотруднике</p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src={% static "img/benefits/3.webp"%} alt="" class="benefits__card-img">
+                        <p class="benefits__card-txt">Система обучения для ваших сотрудников</p>
+                    </div>
+                    <div class="benefits__card">
+                        <img src={% static "img/benefits/4.webp"%} alt="" class="benefits__card-img">
+                        <p class="benefits__card-txt">Вовлечение через (чаевые, донаты, отзывы и т.д.)</p>
+                    </div>
+                </div>
+                <img src={% static "img/benefits/reviews.webp"%} alt="" class="benefits__pic">
+                <img src={% static "img/benefits/stars.webp"%} alt="" class="benefits__pic">
+                <img src={% static "img/benefits/QRCode.webp"%} alt="" class="benefits__pic">
+                <img src={% static "img/benefits/succesfull.webp"%} alt="" class="benefits__pic">
+            </div>
+        </section>
+        <section class="tariff" id="tariff">
+            <div class="container">
+                <h2 class="tariff__title title">Тарифы</h2>
+                <div class="tariff__content">
+                    <div class="tariff__card">
+                        <h3 class="tariff__card-title">Premium +<span class="tariff__card-span">$0.00</span></h3>
+                        <div class="tariff__card-desc">
+                            <p class="tariff__card-subtitle">Информация по тарифу Premium +</p>
+                            <ul class="tariff__card-list">
+                                <li class="tariff__card-item">
+                                    <a href="#!" class="tariff__card-link"><img src={% static "img/tariff/tick-square.svg"%} alt=""> Обратная связь</a>
+                                </li>
+                                <li class="tariff__card-item">
+                                    <a href="#!" class="tariff__card-link"><img src={% static "img/tariff/tick-square.svg"%} alt=""> Обратная связь</a>
+                                </li>
+                                <li class="tariff__card-item">
+                                    <a href="#!" class="tariff__card-link"><img src={% static "img/tariff/tick-square.svg"%} alt=""> Обратная связь</a>
+                                </li>
+                                <li class="tariff__card-item">
+                                    <a href="#!" class="tariff__card-link"><img src={% static "img/tariff/tick-square.svg"%} alt=""> Обратная связь</a>
+                                </li>
+                            </ul>
+                            <a href="#!" class="tariff__card-btn btn">Cкоро</a>
+                        </div>
+                    </div>
+                    <div class="tariff__desc">
+                        <h3 class="tariff__desc-title">Информация по тарифам скоро обновится</h3>
+                        <img src={% static "img/tariff/Loading-pana.svg"%} alt="" class="tariff__desc-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help" id="help">
+            <div class="container">
+                <h2 class="help__title title">Мы поможем вам:</h2>
+                <div class="help__content">
+                    <div class="help__content-desc">
+                        <p class="help__content-txt">Адаптировать новичков</p>
+                        <p class="help__content-txt">Проверить знания</p>
+                        <p class="help__content-txt">Обеспечить знание регламентов</p>
+                        <p class="help__content-txt">Оперативно информировать команду</p>
+                    </div>
+                    <img src={% static "img/help/help.svg"%} alt="" class="help__content-image">
+                    <div class="help__content-desc">
+                        <p class="help__content-txt">Сократить кол-во ошибок</p>
+                        <p class="help__content-txt">Поддержать очные тренинги</p>
+                        <p class="help__content-txt">Снизить затраты на обучение</p>
+                        <p class="help__content-txt">Перевести обучение на удаленку</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partner" id="partner">
+            <div class="container">
+                <h2 class="partner__title title">Нам доверяют</h2>
+                <div class="partner__carousel">
+                    <div class="swiper partner__slider" id="partner__carousel">
+                        <div class="swiper-wrapper partner__wrapper">
+                            <div class="swiper-slide partner__slide">
+                                <img src={% static "img/partner/Yaponamama.webp"%} alt="" class="partner__slide-image">
+                                <p class="partner__slide-txt">Yaponamama</p>
+                            </div>
+                            <div class="swiper-slide partner__slide">
+                                <img src={% static "img/partner/Bellstore.webp"%} alt="" class="partner__slide-image">
+                                <p class="partner__slide-txt">Bellstore</p>
+                            </div>
+                            <div class="swiper-slide partner__slide">
+                                <img src={% static "img/partner/MUNA.webp"%} alt="" class="partner__slide-image">
+                                <p class="partner__slide-txt">MUNA</p>
+                            </div>
+                            <div class="swiper-slide partner__slide">
+                                <img src={% static "img/partner/Jowi.webp"%} alt="" class="partner__slide-image">
+                                <p class="partner__slide-txt">Jowi</p>
+                            </div>
+                            <div class="swiper-slide partner__slide">
+                                <img src={% static "img/partner/Update.webp"%} alt="" class="partner__slide-image">
+                                <p class="partner__slide-txt">Update</p>
+                            </div>
+                            <div class="swiper-slide partner__slide">
+                                <img src={% static "img/partner/Columbina.webp"%} alt="" class="partner__slide-image">
+                                <p class="partner__slide-txt">Columbina</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev partner__prev"></div>
+                    <div class="swiper-button-next partner__next"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="contact__title title">По всем вопросам свяжитесь с нами</h2>
+                <div class="contact__content">
+                    <div class="contact__content-desc">
+                        <a href="#!" class="contact__content-logo"><img src={% static "img/logo.svg"%} alt=""></a>
+                        <ul class="contact__content-list">
+                            <li class="contact__content-item">
+                                <a href="tel:+998903323366" class="contact__content-link"><img src={% static "img/contact/call.svg"%} alt="">+998903323366</a>
+                            </li>
+                            <li class="contact__content-item">
+                                <a href="https://t.me/s/coachalimov" class="contact__content-link"><img src={% static "img/contact/telegram.svg"%} alt="">coachalimov</a>
+                            </li>
+                            <li class="contact__content-item">
+                                <a href="https://instagram.com/coachalimov?igshid=YmMyMTA2M2Y=" class="contact__content-link"><img src={% static "img/contact/instagram.svg"%} alt="">coachalimov</a>
+                            </li>
+                            <li class="contact__content-item">
+                                <a href="mailto:coachalimov@gmail.com" class="contact__content-link"><img src={% static "img/contact/sms.svg"%} alt="">coachalimov@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="" class="contact__content-form" method="POST">
+                        {% csrf_token %}
+
+                        <div class="contact__content-inpts">
+
+                            <input type="text" name="name" id="userName" class="contact__content-inp" required placeholder="Имя">
+                            <input type="text" name="surname" id="userSurname" class="contact__content-inp" required placeholder="Фамилия">
+                        </div>
+                        <div class="contact__content-inpts">
+                            <input type="tel" name="phone" id="userTel" class="contact__content-inp" required placeholder="Телефон">
+                            <input type="email" name="email" id="userEmail" class="contact__content-inp" required placeholder="Email">
+                        </div>
+                        <textarea name="text_message" id="userMessage" cols="30" rows="10" required placeholder="Текст сообщения" class="contact__content-textarea"></textarea>
+                        <button class="contact__content-btn btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="modal">
+        <div class="modal__success">
+            <a href="#!" class="modal__logo"><img src={% static "img/logo.svg"%} alt=""></a>
+            <h3 class="modal__title">СПАСИБО!</h3>
+            <p class="modal__txt">Ваша заявка успешно отправлена наш менеджер свяжется с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <a href="#!" class="footer__logo"><img src={% static "img/logo.svg"%} alt=""></a>
+            <p class="footer__txt" id="year"><script>const zico = new Date();year.innerText = 'WeAre© ' + zico.getFullYear();</script> All Rights Reserved</p>
+        </div>
+    </div>
+    <a href="#header" class="footer__up-btn"><img src={% static "img/footer/up.svg"%} alt=""></a>
+</footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src={% static "scripts/main.min.js"%}></script>
+</body>
+
+</html>
